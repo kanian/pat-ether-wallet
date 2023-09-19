@@ -1,0 +1,127 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "receiver",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"myBalance()": {
+					"returns": {
+						"_0": "The balance of the smart contract wallet"
+					}
+				},
+				"transfer(address,uint256)": {
+					"params": {
+						"amount": "The amount to transfer",
+						"receiver": "The address of the receiver"
+					}
+				},
+				"withdraw(uint256)": {
+					"params": {
+						"amount": "The amount to withdraw"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"deposit()": {
+					"notice": "Deposit ETH into the smart contract wallet"
+				},
+				"myBalance()": {
+					"notice": "Get the balance of the smart contract wallet"
+				},
+				"transfer(address,uint256)": {
+					"notice": "Transfer ETH from one user to another"
+				},
+				"withdraw(uint256)": {
+					"notice": "Withdraw ETH from the smart contract wallet"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"PatEtherWallet.sol": "PatEtherWallet"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"PatEtherWallet.sol": {
+			"keccak256": "0x0dd40af72d37117f437c70521c260344b111e96b7de47464b758f654d71b017b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aa49533affe578fd0d9635dca9a3c0d79d028bda1a3fdc51374b23871899cb33",
+				"dweb:/ipfs/QmXTacf24rLyvNTpnEcX39qCStQ85ut55NV3Qy9peHhXsw"
+			]
+		}
+	},
+	"version": 1
+}
