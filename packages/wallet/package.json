@@ -1,5 +1,6 @@
 {
-  "name": "pat-ether-wallet",
+  "name": "wallet",
+  "private": true,
   "version": "1.0.0",
   "description": "Toy wallet",
   "main": "index.js",

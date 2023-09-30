@@ -1,0 +1,17 @@
+{
+  "name": "hayek-vault",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "version": "1.0.0",
+  "description": "Easy to use ethereum wallet",
+  "main": "index.js",
+  "repository": "git@github.com:kanian/pat-ether-wallet.git",
+  "author": "Patrick Assoa Adou <patrick.assoa.adou@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^7.3.0"
+  }
+}
