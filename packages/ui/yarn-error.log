@@ -1,0 +1,60 @@
+Arguments: 
+  /home/hp/.nvm/versions/node/v20.5.0/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /home/hp/.sdkman/candidates/sbt/current/bin:/home/hp/.sdkman/candidates/java/current/bin:/home/hp/.sdkman/candidates/gradle/current/bin:/home/hp/miniconda3/bin:/home/hp/miniconda3/condabin:/home/hp/Documents/Learning/Solana/GeneralConfigScripts:/home/hp/.local/share/solana/install/active_release/bin:/home/hp/.nvm/versions/node/v20.5.0/bin:/home/hp/.ebcli-virtual-env/executables:/usr/bin:/usr/local/bin:/home/hp/PersonalScripts:/opt/zotero:/home/hp/temp/client:/home/hp/temp:/home/hp/temp/istio-1.8.0/bin:/home/hp/.local/bin:/home/hp/Desktop/Apps/Pomello:/home/hp/Desktop/Apps/Marktext:/home/hp/Desktop/Apps/Umlet:/home/hp/Desktop/Apps/android-studio/bin:/home/hp/Desktop/Apps/IDEAJ/bin:/home/hp/Desktop/Apps:/usr/bin/java:/home/linuxbrew/.linuxbrew/bin:/home/hp/Desktop/tor-browser_en-US:/home/hp/.nvm/versions/node/v14.19.0/bin:/home/hp/.local/share/solana/install/active_release/bin:/home/hp/.cargo/bin:/home/hp/Desktop/Apps/DataGrip-2020.2/bin:/home/hp/Desktop/tor-browser_en-US:/home/hp/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/usr/local/bin/youtube-dl
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  20.5.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: write EPROTO 00F8C9E0047F0000:error:0A000410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 40
+  
+      at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:94:16)
+
+npm manifest: 
+  {
+    "name": "ui",
+    "private": true,
+    "sideEffects": false,
+    "scripts": {
+      "build": "remix build",
+      "dev": "remix dev",
+      "start": "remix-serve build",
+      "typecheck": "tsc"
+    },
+    "dependencies": {
+      "@remix-run/node": "^2",
+      "@remix-run/react": "^2",
+      "@remix-run/serve": "^2",
+      "isbot": "^3.6.13",
+      "match-sorter": "^6.3.1",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "sort-by": "^1.2.0",
+      "tiny-invariant": "^1.3.1"
+    },
+    "devDependencies": {
+      "@remix-run/dev": "^2",
+      "@remix-run/eslint-config": "^2",
+      "@types/react": "^18.2.20",
+      "@types/react-dom": "^18.2.7",
+      "eslint": "^8.47.0",
+      "typescript": "^5.1.6"
+    },
+    "engines": {
+      "node": ">=18.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
