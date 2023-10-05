@@ -7,6 +7,7 @@
   "scripts": {
     "compile": "hardhat compile",
     "test": "yarn compile && npx mocha",
+    "test_gas_report": "GAS_REPORT=true npx hardhat test",
     "deploy-local": "hardhat run --network localhost scripts/deploy.ts",
     "deploy-sepolia": "ENV=dev hardhat run --network sepolia scripts/deploy.ts"
   },

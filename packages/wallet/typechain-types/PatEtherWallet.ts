@@ -23,9 +23,18 @@ import type {
 
 export interface PatEtherWalletInterface extends Interface {
   getFunction(
-    nameOrSignature: "deposit" | "myBalance" | "transfer" | "withdraw"
+    nameOrSignature:
+      | "balance"
+      | "deposit"
+      | "myBalance"
+      | "transfer"
+      | "withdraw"
   ): FunctionFragment;
 
+  encodeFunctionData(
+    functionFragment: "balance",
+    values: [AddressLike]
+  ): string;
   encodeFunctionData(functionFragment: "deposit", values?: undefined): string;
   encodeFunctionData(functionFragment: "myBalance", values?: undefined): string;
   encodeFunctionData(
@@ -37,6 +46,7 @@ export interface PatEtherWalletInterface extends Interface {
     values: [BigNumberish]
   ): string;
 
+  decodeFunctionResult(functionFragment: "balance", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "deposit", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "myBalance", data: BytesLike): Result;
   decodeFunctionResult(functionFragment: "transfer", data: BytesLike): Result;
@@ -86,6 +96,8 @@ export interface PatEtherWallet extends BaseContract {
     event?: TCEvent
   ): Promise<this>;
 
+  balance: TypedContractMethod<[wallet: AddressLike], [bigint], "view">;
+
   deposit: TypedContractMethod<[], [void], "payable">;
 
   myBalance: TypedContractMethod<[], [bigint], "view">;
@@ -102,6 +114,9 @@ export interface PatEtherWallet extends BaseContract {
     key: string | FunctionFragment
   ): T;
 
+  getFunction(
+    nameOrSignature: "balance"
+  ): TypedContractMethod<[wallet: AddressLike], [bigint], "view">;
   getFunction(
     nameOrSignature: "deposit"
   ): TypedContractMethod<[], [void], "payable">;
